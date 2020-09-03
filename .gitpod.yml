@@ -1,9 +1,5 @@
 image: daimor/iris-community-gitpod:2020.3.0.200.0
 
-vscode:
-  extensions:    
-    - daimor.vscode-objectscript@0.9.0:kXeqT+tvbI6mD5D9Fi0alQ==
-
 tasks:
   - before: |
       waitISC.sh "$ISC_PACKAGE_INSTANCENAME" 60 "running"
