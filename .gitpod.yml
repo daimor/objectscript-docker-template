@@ -7,7 +7,6 @@ vscode:
 tasks:
   - before: |
       waitISC.sh "$ISC_PACKAGE_INSTANCENAME" 60 "running"
-    init: |
       cat << EOF | iris session $ISC_PACKAGE_INSTANCENAME -U %SYS
       do ##class(%SYSTEM.Process).CurrentDirectory("$PWD")
       do ##class(%SYSTEM.OBJ).Load("Installer.cls","ck")
